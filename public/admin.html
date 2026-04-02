@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin – Meme Tournament</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="admin-body">
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚙</span>
+        <span class="logo-text">Admin Panel</span>
+      </div>
+      <nav>
+        <a href="/" class="nav-btn">Zur Abstimmung</a>
+        <button class="nav-btn nav-danger" id="btn-logout" onclick="logout()" style="display:none">Abmelden</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="admin-main">
+    <!-- Login -->
+    <div id="login-screen">
+      <div class="login-card">
+        <div class="login-icon">🔐</div>
+        <h2>Admin Login</h2>
+        <div class="form-group">
+          <input type="password" id="password-input" placeholder="Passwort" class="input-field"
+            onkeydown="if(event.key==='Enter') login()">
+        </div>
+        <button class="btn btn-primary btn-full" onclick="login()">Anmelden</button>
+        <div id="login-error" class="error-msg hidden"></div>
+      </div>
+    </div>
+
+    <!-- Admin Content -->
+    <div id="admin-content" class="hidden">
+
+      <!-- Tournament Panel -->
+      <section class="admin-section">
+        <h2 class="section-title">🏆 Turnier</h2>
+        <div id="tournament-status"></div>
+
+        <div id="start-tournament-panel">
+          <div class="form-row" style="margin-bottom:16px;">
+            <input type="text" id="tournament-name" placeholder="Turniername (optional)" class="input-field">
+          </div>
+
+          <!-- Meme Selection Grid -->
+          <div id="meme-selection-section">
+            <div class="meme-select-header">
+              <span id="meme-select-counter" class="meme-select-counter">0 von 0 Memes ausgewählt</span>
+              <div class="meme-select-actions">
+                <button class="btn btn-secondary btn-sm" onclick="selectAllMemes()">Alle auswählen</button>
+                <button class="btn btn-secondary btn-sm" onclick="deselectAllMemes()">Keine</button>
+              </div>
+            </div>
+            <div id="meme-select-grid" class="meme-select-grid"></div>
+          </div>
+
+          <div style="margin-top:16px;">
+            <button class="btn btn-primary" id="start-tournament-btn" onclick="startTournament()" disabled>Turnier starten</button>
+          </div>
+        </div>
+
+        <div id="reset-tournament-panel" class="hidden">
+          <button class="btn btn-danger" onclick="resetTournament()">Turnier zurücksetzen</button>
+        </div>
+      </section>
+
+      <!-- Active Matches Panel -->
+      <section class="admin-section" id="active-matches-section" style="display:none">
+        <h2 class="section-title">⚔️ Aktive Matches</h2>
+        <p class="section-hint">Klicke "Match beenden" sobald genug Votes eingegangen sind. Bei Gleichstand entscheidet der Zufall.</p>
+        <div id="admin-matches"></div>
+      </section>
+
+      <!-- User Management -->
+      <section class="admin-section" id="user-management-section">
+        <h2 class="section-title">👥 Nutzer-Verwaltung</h2>
+
+        <div class="form-row" style="margin-bottom:20px;">
+          <input type="text" id="new-username" placeholder="Benutzername" class="input-field" autocomplete="off">
+          <input type="password" id="new-password" placeholder="Passwort" class="input-field" autocomplete="new-password">
+          <button class="btn btn-primary" onclick="createUser()">Nutzer anlegen</button>
+        </div>
+
+        <div id="user-list"></div>
+      </section>
+
+      <!-- Meme Upload -->
+      <section class="admin-section">
+        <h2 class="section-title">📤 Meme hochladen</h2>
+        <div class="upload-area" id="upload-area" ondrop="handleDrop(event)" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)">
+          <input type="file" id="file-input" accept="image/*" onchange="handleFileSelect(event)" style="display:none">
+          <div class="upload-icon">🖼️</div>
+          <p>Bild hierher ziehen oder <button class="btn-link" onclick="document.getElementById('file-input').click()">auswählen</button></p>
+          <p class="upload-hint">JPG, PNG, GIF, WebP – max. 20 MB</p>
+        </div>
+        <div id="upload-preview" class="hidden">
+          <img id="preview-img" src="" alt="Vorschau">
+          <div class="form-row">
+            <input type="text" id="meme-name" placeholder="Meme-Name" class="input-field">
+            <button class="btn btn-primary" onclick="uploadMeme()">Hochladen</button>
+            <button class="btn btn-secondary" onclick="cancelUpload()">Abbrechen</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meme Gallery -->
+      <section class="admin-section">
+        <h2 class="section-title">🗃️ Meme-Sammlung <span id="meme-count" class="badge"></span></h2>
+        <div id="meme-gallery" class="meme-gallery-grid"></div>
+      </section>
+
+      <!-- Tournament History -->
+      <section class="admin-section" id="history-section">
+        <h2 class="section-title">📊 Turnier-Historie</h2>
+        <div id="tournament-history-list">
+          <p style="color:var(--text-muted);font-size:0.85rem">Lade Historie…</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "meme-tournament",
+  "version": "1.0.0",
+  "description": "Meme of the Month Tournament",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.3",
+    "multer": "^1.4.5-lts.1"
+  }
+}

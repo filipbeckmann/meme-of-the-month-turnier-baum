@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme of the Month</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- ── Login Modal ─────────────────────────────────────────────────────── -->
+  <div id="login-modal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-icon">🔐</div>
+      <h2 class="modal-title">Anmelden</h2>
+      <p class="modal-hint" id="login-hint">Melde dich an, um abstimmen zu können.</p>
+      <div id="login-no-users-msg" class="hidden" style="color:var(--text-muted);font-size:0.85rem;margin-bottom:16px;">
+        Keine Nutzer vorhanden – bitte Admin kontaktieren.
+      </div>
+      <div id="login-form-fields">
+        <input
+          id="login-username"
+          class="input-field modal-input"
+          type="text"
+          maxlength="50"
+          placeholder="Benutzername"
+          autocomplete="username"
+          onkeydown="if(event.key==='Enter') document.getElementById('login-password').focus()"
+        >
+        <input
+          id="login-password"
+          class="input-field modal-input"
+          type="password"
+          maxlength="100"
+          placeholder="Passwort"
+          autocomplete="current-password"
+          onkeydown="if(event.key==='Enter') doLogin()"
+        >
+        <div id="login-error" class="login-error hidden"></div>
+        <button class="btn btn-primary btn-full" onclick="doLogin()">Anmelden 🚀</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Header ─────────────────────────────────────────────────────────── -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🏆</span>
+        <span class="logo-text">Meme of the Month</span>
+      </div>
+      <nav>
+        <button class="nav-btn active" id="btn-voting"  onclick="switchView('voting')">Abstimmung</button>
+        <button class="nav-btn"        id="btn-bracket" onclick="switchView('bracket')">Turnierbaum</button>
+        <button class="nav-btn nav-user" id="user-badge"></button>
+        <button class="nav-btn nav-danger" id="btn-logout" onclick="doLogout()" style="display:none">Abmelden</button>
+        <a href="/admin.html" class="nav-btn nav-admin">⚙ Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main ───────────────────────────────────────────────────────────── -->
+  <main id="main-content">
+    <div id="view-voting">
+      <div id="round-header"></div>
+      <div id="matches-container"></div>
+    </div>
+
+    <div id="view-bracket" class="hidden">
+      <div id="bracket-content"></div>
+    </div>
+
+    <div id="view-winner" class="hidden">
+      <div class="winner-screen">
+        <div class="winner-title-wrap">
+          <h1 class="winner-title">Meme of the Month</h1>
+          <div class="confetti-row">🎉🎊🏆🎊🎉</div>
+        </div>
+        <div id="winner-card"></div>
+        <div id="winner-history"></div>
+      </div>
+    </div>
+
+    <div id="view-empty" class="hidden">
+      <div class="empty-state">
+        <div class="empty-icon">🎭</div>
+        <h2>Kein aktives Turnier</h2>
+        <p>Warte bis ein Admin ein Turnier startet!</p>
+      </div>
+    </div>
+
+    <div id="view-loading">
+      <div class="loading-spinner"></div>
+    </div>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

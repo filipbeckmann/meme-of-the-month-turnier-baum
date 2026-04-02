@@ -1,0 +1,628 @@
+{
+  "memes": [
+    {
+      "id": 1,
+      "name": "NiH: Renés und Ich",
+      "filename": "d6f5cedc6aac4d785e763c616bde84fa.png",
+      "created_at": "2026-04-01T10:24:21.877Z"
+    },
+    {
+      "id": 2,
+      "name": "RP: HKS Sommerfest 2025",
+      "filename": "16233c070b1b6db4620ed27c886db5a8.png",
+      "created_at": "2026-04-01T10:24:37.196Z"
+    },
+    {
+      "id": 4,
+      "name": "JC: FiB Kosy Online Doku",
+      "filename": "18dc49d87cf24e485f16f20135d6ce33.png",
+      "created_at": "2026-04-01T10:24:48.295Z"
+    },
+    {
+      "id": 5,
+      "name": "NiH: Lizenz angeln",
+      "filename": "c144c7831d31fac50228a4e5e8e91f2a.png",
+      "created_at": "2026-04-01T10:24:51.661Z"
+    },
+    {
+      "id": 6,
+      "name": "DP: Say the line NiH",
+      "filename": "4da1a15e0a6ad2a8e734af5676efd871.png",
+      "created_at": "2026-04-01T10:24:54.346Z"
+    },
+    {
+      "id": 7,
+      "name": "FiB, RP & NiH: Collab",
+      "filename": "2245dae66f3bc4ba6e8ab1b0f15f1301.png",
+      "created_at": "2026-04-01T10:24:59.468Z"
+    },
+    {
+      "id": 8,
+      "name": "DP: the Closer",
+      "filename": "dab9f7680904055b1f3c4818a27f38ef.png",
+      "created_at": "2026-04-01T10:25:06.328Z"
+    },
+    {
+      "id": 9,
+      "name": "FiB: Strum und Dang",
+      "filename": "70175d3c66c55586163b03616f7ce9d4.png",
+      "created_at": "2026-04-01T10:25:09.699Z"
+    },
+    {
+      "id": 10,
+      "name": "RP: HKS feels bad for SAP",
+      "filename": "7187a52bbde1253e010ed0bd0ee92db8.jpg",
+      "created_at": "2026-04-01T10:25:12.708Z"
+    },
+    {
+      "id": 11,
+      "name": "FiB: press FiB to Pay Respects",
+      "filename": "77cb4f2d60f0de591c278e96bfb6f63f.png",
+      "created_at": "2026-04-01T10:25:15.447Z"
+    }
+  ],
+  "tournaments": [
+    {
+      "id": 6,
+      "name": "Meme of the Month März 2026",
+      "status": "active",
+      "created_at": "2026-04-01T13:07:28.198Z"
+    }
+  ],
+  "rounds": [
+    {
+      "id": 10,
+      "tournament_id": 6,
+      "round_number": 1,
+      "status": "completed"
+    },
+    {
+      "id": 11,
+      "tournament_id": 6,
+      "round_number": 2,
+      "status": "active"
+    }
+  ],
+  "matches": [
+    {
+      "id": 32,
+      "round_id": 10,
+      "meme1_id": 11,
+      "meme2_id": 2,
+      "meme3_id": null,
+      "winner_id": 11,
+      "status": "completed"
+    },
+    {
+      "id": 33,
+      "round_id": 10,
+      "meme1_id": 4,
+      "meme2_id": 10,
+      "meme3_id": null,
+      "winner_id": 4,
+      "status": "completed"
+    },
+    {
+      "id": 34,
+      "round_id": 10,
+      "meme1_id": 9,
+      "meme2_id": 8,
+      "meme3_id": null,
+      "winner_id": 9,
+      "status": "completed"
+    },
+    {
+      "id": 35,
+      "round_id": 10,
+      "meme1_id": 7,
+      "meme2_id": 6,
+      "meme3_id": null,
+      "winner_id": 7,
+      "status": "completed"
+    },
+    {
+      "id": 36,
+      "round_id": 10,
+      "meme1_id": 5,
+      "meme2_id": 1,
+      "meme3_id": null,
+      "winner_id": 5,
+      "status": "completed"
+    },
+    {
+      "id": 37,
+      "round_id": 11,
+      "meme1_id": 11,
+      "meme2_id": 4,
+      "meme3_id": null,
+      "winner_id": null,
+      "status": "active"
+    },
+    {
+      "id": 38,
+      "round_id": 11,
+      "meme1_id": 9,
+      "meme2_id": 7,
+      "meme3_id": 5,
+      "winner_id": null,
+      "status": "active"
+    }
+  ],
+  "votes": [
+    {
+      "id": 60,
+      "match_id": 32,
+      "meme_id": 2,
+      "user_id": 3,
+      "created_at": "2026-04-01T13:10:04.287Z"
+    },
+    {
+      "id": 61,
+      "match_id": 33,
+      "meme_id": 4,
+      "user_id": 3,
+      "created_at": "2026-04-01T13:10:07.794Z"
+    },
+    {
+      "id": 62,
+      "match_id": 34,
+      "meme_id": 9,
+      "user_id": 3,
+      "created_at": "2026-04-01T13:10:10.093Z"
+    },
+    {
+      "id": 63,
+      "match_id": 35,
+      "meme_id": 7,
+      "user_id": 3,
+      "created_at": "2026-04-01T13:10:16.691Z"
+    },
+    {
+      "id": 64,
+      "match_id": 36,
+      "meme_id": 5,
+      "user_id": 3,
+      "created_at": "2026-04-01T13:10:18.653Z"
+    },
+    {
+      "id": 65,
+      "match_id": 32,
+      "meme_id": 11,
+      "user_id": 2,
+      "created_at": "2026-04-01T13:10:44.549Z"
+    },
+    {
+      "id": 66,
+      "match_id": 33,
+      "meme_id": 4,
+      "user_id": 2,
+      "created_at": "2026-04-01T13:10:48.642Z"
+    },
+    {
+      "id": 67,
+      "match_id": 34,
+      "meme_id": 8,
+      "user_id": 2,
+      "created_at": "2026-04-01T13:10:51.120Z"
+    },
+    {
+      "id": 68,
+      "match_id": 35,
+      "meme_id": 7,
+      "user_id": 2,
+      "created_at": "2026-04-01T13:10:55.768Z"
+    },
+    {
+      "id": 69,
+      "match_id": 36,
+      "meme_id": 1,
+      "user_id": 2,
+      "created_at": "2026-04-01T13:10:57.651Z"
+    },
+    {
+      "id": 70,
+      "match_id": 32,
+      "meme_id": 11,
+      "user_id": 1,
+      "created_at": "2026-04-01T13:12:21.415Z"
+    },
+    {
+      "id": 71,
+      "match_id": 33,
+      "meme_id": 10,
+      "user_id": 1,
+      "created_at": "2026-04-01T13:12:23.768Z"
+    },
+    {
+      "id": 72,
+      "match_id": 34,
+      "meme_id": 9,
+      "user_id": 1,
+      "created_at": "2026-04-01T13:12:26.095Z"
+    },
+    {
+      "id": 73,
+      "match_id": 35,
+      "meme_id": 6,
+      "user_id": 1,
+      "created_at": "2026-04-01T13:12:27.649Z"
+    },
+    {
+      "id": 74,
+      "match_id": 36,
+      "meme_id": 1,
+      "user_id": 1,
+      "created_at": "2026-04-01T13:12:31.590Z"
+    },
+    {
+      "id": 76,
+      "match_id": 33,
+      "meme_id": 4,
+      "user_id": 8,
+      "created_at": "2026-04-01T13:19:08.767Z"
+    },
+    {
+      "id": 77,
+      "match_id": 34,
+      "meme_id": 9,
+      "user_id": 8,
+      "created_at": "2026-04-01T13:19:10.710Z"
+    },
+    {
+      "id": 78,
+      "match_id": 35,
+      "meme_id": 7,
+      "user_id": 8,
+      "created_at": "2026-04-01T13:19:12.416Z"
+    },
+    {
+      "id": 79,
+      "match_id": 36,
+      "meme_id": 5,
+      "user_id": 8,
+      "created_at": "2026-04-01T13:19:13.852Z"
+    },
+    {
+      "id": 80,
+      "match_id": 32,
+      "meme_id": 11,
+      "user_id": 8,
+      "created_at": "2026-04-01T13:19:19.225Z"
+    },
+    {
+      "id": 81,
+      "match_id": 32,
+      "meme_id": 2,
+      "user_id": 5,
+      "created_at": "2026-04-01T14:12:36.996Z"
+    },
+    {
+      "id": 82,
+      "match_id": 33,
+      "meme_id": 4,
+      "user_id": 5,
+      "created_at": "2026-04-01T14:12:40.304Z"
+    },
+    {
+      "id": 83,
+      "match_id": 34,
+      "meme_id": 9,
+      "user_id": 5,
+      "created_at": "2026-04-01T14:12:44.783Z"
+    },
+    {
+      "id": 84,
+      "match_id": 35,
+      "meme_id": 6,
+      "user_id": 5,
+      "created_at": "2026-04-01T14:12:47.057Z"
+    },
+    {
+      "id": 85,
+      "match_id": 36,
+      "meme_id": 5,
+      "user_id": 5,
+      "created_at": "2026-04-01T14:12:48.178Z"
+    },
+    {
+      "id": 86,
+      "match_id": 32,
+      "meme_id": 2,
+      "user_id": 4,
+      "created_at": "2026-04-01T14:27:42.253Z"
+    },
+    {
+      "id": 87,
+      "match_id": 33,
+      "meme_id": 10,
+      "user_id": 4,
+      "created_at": "2026-04-01T14:27:53.971Z"
+    },
+    {
+      "id": 88,
+      "match_id": 34,
+      "meme_id": 9,
+      "user_id": 4,
+      "created_at": "2026-04-01T14:27:55.410Z"
+    },
+    {
+      "id": 89,
+      "match_id": 35,
+      "meme_id": 6,
+      "user_id": 4,
+      "created_at": "2026-04-01T14:27:57.275Z"
+    },
+    {
+      "id": 90,
+      "match_id": 36,
+      "meme_id": 5,
+      "user_id": 4,
+      "created_at": "2026-04-01T14:27:58.764Z"
+    },
+    {
+      "id": 91,
+      "match_id": 32,
+      "meme_id": 11,
+      "user_id": 7,
+      "created_at": "2026-04-01T14:28:10.305Z"
+    },
+    {
+      "id": 92,
+      "match_id": 33,
+      "meme_id": 4,
+      "user_id": 7,
+      "created_at": "2026-04-01T14:28:16.944Z"
+    },
+    {
+      "id": 93,
+      "match_id": 34,
+      "meme_id": 9,
+      "user_id": 7,
+      "created_at": "2026-04-01T14:28:18.976Z"
+    },
+    {
+      "id": 94,
+      "match_id": 35,
+      "meme_id": 7,
+      "user_id": 7,
+      "created_at": "2026-04-01T14:28:22.613Z"
+    },
+    {
+      "id": 95,
+      "match_id": 36,
+      "meme_id": 1,
+      "user_id": 7,
+      "created_at": "2026-04-01T14:28:26.339Z"
+    },
+    {
+      "id": 96,
+      "match_id": 38,
+      "meme_id": 9,
+      "user_id": 7,
+      "created_at": "2026-04-01T15:02:35.354Z"
+    },
+    {
+      "id": 97,
+      "match_id": 37,
+      "meme_id": 4,
+      "user_id": 7,
+      "created_at": "2026-04-01T15:02:47.595Z"
+    },
+    {
+      "id": 98,
+      "match_id": 37,
+      "meme_id": 11,
+      "user_id": 1,
+      "created_at": "2026-04-01T15:05:32.090Z"
+    },
+    {
+      "id": 99,
+      "match_id": 38,
+      "meme_id": 9,
+      "user_id": 1,
+      "created_at": "2026-04-01T15:05:43.747Z"
+    },
+    {
+      "id": 100,
+      "match_id": 37,
+      "meme_id": 4,
+      "user_id": 2,
+      "created_at": "2026-04-02T06:50:47.370Z"
+    },
+    {
+      "id": 101,
+      "match_id": 38,
+      "meme_id": 7,
+      "user_id": 2,
+      "created_at": "2026-04-02T06:50:51.825Z"
+    },
+    {
+      "id": 102,
+      "match_id": 37,
+      "meme_id": 11,
+      "user_id": 8,
+      "created_at": "2026-04-02T06:53:30.931Z"
+    },
+    {
+      "id": 104,
+      "match_id": 37,
+      "meme_id": 4,
+      "user_id": 3,
+      "created_at": "2026-04-02T06:57:23.746Z"
+    },
+    {
+      "id": 105,
+      "match_id": 38,
+      "meme_id": 7,
+      "user_id": 3,
+      "created_at": "2026-04-02T06:57:53.060Z"
+    },
+    {
+      "id": 106,
+      "match_id": 38,
+      "meme_id": 9,
+      "user_id": 8,
+      "created_at": "2026-04-02T07:06:52.410Z"
+    },
+    {
+      "id": 107,
+      "match_id": 37,
+      "meme_id": 4,
+      "user_id": 5,
+      "created_at": "2026-04-02T14:13:24.515Z"
+    },
+    {
+      "id": 108,
+      "match_id": 38,
+      "meme_id": 5,
+      "user_id": 5,
+      "created_at": "2026-04-02T14:13:38.256Z"
+    }
+  ],
+  "seq": {
+    "memes": 11,
+    "tournaments": 6,
+    "rounds": 11,
+    "matches": 38,
+    "votes": 108,
+    "users": 10,
+    "sessions": 13
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "DP",
+      "password_hash": "cec2b43d7a9b1f2d3d761804eb4c8dddf7bb87bdd7535c947a22c7e89353122d",
+      "is_active": true,
+      "created_at": "2026-04-01T12:56:20.411Z"
+    },
+    {
+      "id": 2,
+      "username": "NiH",
+      "password_hash": "205d70c3684adcc7a7a651afcc98bdc5bb11d13111b4826864abd0fcf1b706b6",
+      "is_active": true,
+      "created_at": "2026-04-01T12:56:41.256Z"
+    },
+    {
+      "id": 3,
+      "username": "RP",
+      "password_hash": "7a510ef668f4b1e23d7f6d88d04ae32a48b242cfef9cc4c1b20ad1669d835e92",
+      "is_active": true,
+      "created_at": "2026-04-01T12:56:53.582Z"
+    },
+    {
+      "id": 4,
+      "username": "ToK",
+      "password_hash": "3acc6302f23b2c838a0eb4c4cdad596c9549808a09becaf5ee95690014011a18",
+      "is_active": true,
+      "created_at": "2026-04-01T12:57:09.028Z"
+    },
+    {
+      "id": 5,
+      "username": "RsH",
+      "password_hash": "2a87a5d09aee095542dc96cdea055b698e3374dc2692c6cfa3d822a43e0252fb",
+      "is_active": true,
+      "created_at": "2026-04-01T12:57:19.564Z"
+    },
+    {
+      "id": 6,
+      "username": "LeT",
+      "password_hash": "ab15f90c9e05413893a1bf3815a889a9ff53136a2e5a28615bbe6cebddcd348c",
+      "is_active": true,
+      "created_at": "2026-04-01T12:57:33.624Z"
+    },
+    {
+      "id": 7,
+      "username": "JC",
+      "password_hash": "ea081131cd621da4daf020b2563517d66608a6a060ab6bb4ecaa1100b785aaf9",
+      "is_active": true,
+      "created_at": "2026-04-01T12:57:43.853Z"
+    },
+    {
+      "id": 8,
+      "username": "FiB",
+      "password_hash": "93bae4a445d5b98bc3f54c80360c6ebadb45b53a54aebdb72fa5d4c48f0368ca",
+      "is_active": true,
+      "created_at": "2026-04-01T12:58:03.635Z"
+    },
+    {
+      "id": 9,
+      "username": "BE",
+      "password_hash": "3e026010614093abafa313cab839884b53a7576093a9aac0a4b6ac96993b933b",
+      "is_active": true,
+      "created_at": "2026-04-01T12:58:42.382Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": 3,
+      "token": "4a2f8136e757644f65f02af5235c58d9b5b6c9edf0c6bff0ccd3c09af50c616e",
+      "user_id": 3,
+      "username": "RP",
+      "created_at": "2026-04-01T13:09:41.450Z"
+    },
+    {
+      "id": 4,
+      "token": "3c69c128ebd39178a2dbd879045774c68996d6c41ed144a9c683acd2933e1eb0",
+      "user_id": 2,
+      "username": "NiH",
+      "created_at": "2026-04-01T13:10:20.357Z"
+    },
+    {
+      "id": 5,
+      "token": "82b5c1db338b0637b16c8aba013c8af421e060031a3100b8d7474fa40368b5b9",
+      "user_id": 1,
+      "username": "DP",
+      "created_at": "2026-04-01T13:10:58.526Z"
+    },
+    {
+      "id": 7,
+      "token": "dc4b4b21108e0298ca847ada6b09022cd70638c6d172493de3550af2fc9ddc89",
+      "user_id": 8,
+      "username": "FiB",
+      "created_at": "2026-04-01T13:32:30.499Z"
+    },
+    {
+      "id": 8,
+      "token": "6e52da2817f36b0bcfdaa18e5bcfa4c30a5956c564ddd9d5de2b933a5a90b7c7",
+      "user_id": 5,
+      "username": "RsH",
+      "created_at": "2026-04-01T14:12:14.063Z"
+    },
+    {
+      "id": 9,
+      "token": "6fcafab616608619f859b07d706b87e6c30d9081cb8273833f38d8296c85269c",
+      "user_id": 4,
+      "username": "ToK",
+      "created_at": "2026-04-01T14:27:37.073Z"
+    },
+    {
+      "id": 10,
+      "token": "d48595cee0b6a310508418baa9644d7ee479811b0b0bf7c7b13070fe8bb8261f",
+      "user_id": 7,
+      "username": "JC",
+      "created_at": "2026-04-01T14:28:05.706Z"
+    },
+    {
+      "id": 11,
+      "token": "38e7c617d4db8ae7a08657062749bc4178d3340d9a4d355bb78e1ae40ba054f1",
+      "user_id": 8,
+      "username": "FiB",
+      "created_at": "2026-04-01T14:34:33.844Z"
+    },
+    {
+      "id": 12,
+      "token": "43d4d04a63fb810dd1d94e9a7ca8dd2ee6abadc2517a67236d6754f38310b8a3",
+      "user_id": 7,
+      "username": "JC",
+      "created_at": "2026-04-01T15:01:02.639Z"
+    },
+    {
+      "id": 13,
+      "token": "ac7f3f0d78a887ba9c3b6d14c5dde50f765543893431bdacf03f1fa656bb0a5b",
+      "user_id": 8,
+      "username": "FiB",
+      "created_at": "2026-04-02T07:01:30.359Z"
+    }
+  ]
+}
